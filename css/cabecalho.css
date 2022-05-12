@@ -1,0 +1,22 @@
+.container_cabecalho {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid white;
+    background-color: black;
+}
+.itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(0, 168, 246);
+    width: 40%;
+    margin-left: 65vw;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+    font-family: candara;
+}
+a {
+    color: currentColor;
+    text-decoration:none;
+}
