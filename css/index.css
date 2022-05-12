@@ -24,12 +24,24 @@ body {
 }
 
 .texto_banner{
+    color: rgb(0, 168, 246);
+    margin:20px 1px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.titulo_banner{
+
     color: aqua;
     margin:20px 1px;
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-family: monospace;
     font-weight: bold;
 }
