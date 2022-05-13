@@ -6,7 +6,7 @@ body {
 }
 
 .banner{
-    height: 500px;
+    height: 450px;
     width: 80%;
     border: 5px solid white;
     background:black;
@@ -20,7 +20,7 @@ body {
 }
 
 .img_banner{
-    height: 500px;
+    height: 450px;
 }
 
 .texto_banner{
@@ -44,4 +44,27 @@ body {
     font-size: 35px;
     font-family: monospace;
     font-weight: bold;
+}
+
+#saiba_mais{
+    margin-left: 125px;
+}
+
+.btn_banner{
+    background-color: transparent;
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 125px;
+    border-radius: 50px;
+}
+.btn_banner :hover{
+    background: rgb(0, 168, 246);
+    margin-left: -10px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 50px;
+    color: black;
 }
