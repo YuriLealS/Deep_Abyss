@@ -1,17 +1,10 @@
-body {
-    margin: 0;
-    background-image: url(img/fundo.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-
 .banner{
     height: 450px;
     width: 80%;
     border: 5px solid white;
     background:black;
     background-size: 100%;
-    margin: 10%;
+    margin: 15% 10% 10% 10%;
 }
 
 .container_banner{

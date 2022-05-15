@@ -1,5 +1,12 @@
 .cabecalho{
-    margin-top: -135px;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+.cabecalho_index{
+    top:0;
+    left: 0;
     position: fixed;
     width: 100%;
 }

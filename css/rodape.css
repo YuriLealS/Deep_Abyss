@@ -6,6 +6,8 @@
     color: white;
     align-items: center;
     width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 .logo_facebook {

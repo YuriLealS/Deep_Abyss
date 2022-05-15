@@ -1,0 +1,31 @@
+#cadastro_card{
+    margin: 12% 30% 5% 30%;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    border-radius: 50px;
+}
+.ipt_cadastro{
+    width: 200px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    border-bottom: 1px solid aqua;
+    margin: 10px 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;    
+}
+h1{
+    color: aqua;
+    padding: 0;
+}
