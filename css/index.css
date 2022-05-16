@@ -2,6 +2,7 @@
     height: 450px;
     width: 80%;
     border: 5px solid white;
+    box-shadow: 1px 1px 40px aqua;
     background:black;
     background-size: 100%;
     margin: 15% 10% 10% 10%;
