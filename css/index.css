@@ -62,3 +62,28 @@
     border-radius: 50px;
     color: black;
 }
+
+.explicacao_zonaAbissal{
+    box-shadow: 1px 1px 40px aqua;
+    border: 4px solid white;
+    border-radius: 80px 0 80px 0;
+    margin: 15% 10% 10% 10%;
+    margin: 0 10% 10% 10%;
+    background: black;
+    padding: 30px;
+}
+
+.corpo_explicacao{
+    color:rgb(0, 168, 246);
+    text-align: center;
+}
+
+#titulo_explicacao{
+    color: aqua;
+    font-size: 40px;
+}
+
+.imagem_explicacao{
+    border-radius: 10px;
+    height: 400px;
+}
