@@ -1,10 +1,11 @@
+/* COMEÇO BANNER  */
+
 .banner{
-    height: 450px;
-    width: 80%;
+    /* height: 72vh; */
+    width: 80vw;
     border: 5px solid white;
     box-shadow: 1px 1px 40px aqua;
-    background:rgba(0, 0, 0, 0.836);
-    background-size: 100%;
+    background:rgba(0, 0, 0, 0.507);
     margin: 15% 10% 0% 10%;
 }
 
@@ -14,34 +15,41 @@
 }
 
 .img_banner{
-    height: 450px;
+    height: 72vh;
+    width: 50vw;
+}
+
+.caixa_texto_banner{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    align-items: center;
 }
 
 .texto_banner{
-    color: rgb(0, 168, 246);
-    margin:20px 1px;
+    color: rgb(0, 168, 246); 
     display: flex;
     flex-direction: row;
-    text-align: center;
-    font-size: 25px;
+    text-align: justify;
+    font-size: 190%;
     font-family: monospace;
     font-weight: bold;
+    text-indent: 3vw;
 }
 
 .titulo_banner{
 
     color: aqua;
-    margin:20px 1px;
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-size: 35px;
+    font-size: 200%;
     font-family: monospace;
     font-weight: bold;
 }
 
 #saiba_mais{
-    margin-left: 125px;
+    text-indent: 0;
     text-decoration: underline;
 }
 
@@ -49,36 +57,40 @@
     background-color: transparent;
     text-align: center;
     color: aqua;
-    font-size: 20px;
+    font-size: 150%;
     font-family: monospace;
     font-weight: bold;
-    margin-left: 125px;
-    border-radius: 50px;
     border: transparent;
 }
 .btn_banner :hover{
     background: rgb(0, 168, 246);
-    margin-left: -10px;
-    padding: 10px;
+    padding: 1vh;
     border: transparent;
-    border-radius: 50px;
+    border-radius: 2vw;
     color: black;
 }
 
+/* FIM BANNER  */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* COMEÇO EXPLICAÇÃO */
+
 .explicacao_zonaAbissal{
     box-shadow: 1px 1px 40px aqua;
-    border: 4px solid white;
+    border: 5px solid white;
     border-radius: 80px 0 80px 0;
     margin: 15% 10% 10% 10%;
     margin: 0 10% 10% 10%;
-    background: rgba(0, 0, 0, 0.671);
+    background:rgba(0, 0, 0, 0.507);
     padding: 30px;
 }
 
 .corpo_explicacao{
-    color:rgb(0, 168, 246);
+    color:white;
     text-align: center;
     padding: 0 50px;
+    font-size: 18px;
 }
 
 #titulo_explicacao{
@@ -102,3 +114,25 @@
     font-weight: bold;
     text-indent: 70px;
 }
+
+.btn_cadastro_explicacao{
+    background-color: transparent;
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    border: transparent;
+    margin-bottom: 10px;
+}
+.btn_cadastro_explicacao :hover{
+    background: rgb(0, 168, 246);
+    padding: 10px;
+    border: transparent;
+    border-radius: 50px;
+    color: black;
+}
+
+/* FIM EXPLICAÇÃO */
+
+/* ---------------------------------------------------------------------------------------------------------- */
