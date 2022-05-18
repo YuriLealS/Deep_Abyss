@@ -78,6 +78,7 @@
 .corpo_explicacao{
     color:rgb(0, 168, 246);
     text-align: center;
+    padding: 0 50px;
 }
 
 #titulo_explicacao{
@@ -88,4 +89,16 @@
 .imagem_explicacao{
     border-radius: 10px;
     height: 400px;
+}
+
+.texto_banner_explicacao{
+    color: rgb(0, 168, 246);
+    margin:20px 1px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+    text-indent: 70px;
 }
