@@ -1,14 +1,14 @@
 .rodape {
-    background: black;
+    background: var(--preto);
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--branco);
     align-items: center;
     width: 100%;
     bottom: 0;
     left: 0;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--branco);
 }
 
 .logo_facebook {
@@ -32,7 +32,7 @@
 }
 
 .texto_rodape{
-    color: rgba(0, 221, 255, 0.641);
+    color: var(--textoRodape);
 }
 
 .texto_rodape_index{

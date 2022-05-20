@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgb(3, 0, 17);
+    background: var(--fundo);
 }
 
 html{

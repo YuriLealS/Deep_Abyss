@@ -8,22 +8,22 @@
 .container_cabecalho {
     display: flex;
     flex-direction: row;
-    border-bottom: 0.4vh solid white;
-    box-shadow: 0 0 2vh white;
-    background-color: black;
+    border-bottom: 0.4vh solid var(--branco);
+    box-shadow: 0 0 2vh var(--branco);
+    background: var(--preto);
     align-items: center;
 }
 .itens_cabecalho{
     display: flex;
     flex-direction: row;
-    color: rgb(0, 168, 246);
+    color: var(--letra);
     width: 50%;
     margin-left: 35vw;
     font-size: 170%;
     list-style: none;
     font-weight: bold;
     font-family: candara;
-    text-shadow: 1px 1px 0 white;
+    text-shadow: 1px 1px 0 var(--branco);
     justify-content: space-evenly;
 }
 a {

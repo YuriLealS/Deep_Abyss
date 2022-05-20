@@ -1,11 +1,10 @@
 /* COMEÇO BANNER  */
 
 .banner{
-    /* height: 72vh; */
     width: 80vw;
-    border: 5px solid white;
-    box-shadow: 1px 1px 40px aqua;
-    background:rgba(0, 0, 0, 0.507);
+    border: 5px solid var(--branco);
+    box-shadow: 1px 1px 40px var(--aqua);
+    background:var(--fundoCard);
     margin: 15% 10% 0% 10%;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .texto_banner{
-    color: rgb(0, 168, 246); 
+    color: var(--letra); 
     display: flex;
     flex-direction: row;
     text-align: justify;
@@ -39,7 +38,7 @@
 
 .titulo_banner{
 
-    color: aqua;
+    color: var(--aqua);
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -54,20 +53,20 @@
 }
 
 .btn_banner{
-    background-color: transparent;
+    background-color: var(--transparent);
     text-align: center;
-    color: aqua;
+    color: var(--aqua);
     font-size: 150%;
     font-family: monospace;
     font-weight: bold;
-    border: transparent;
+    border: var(--transparent);
 }
 .btn_banner :hover{
     background: rgb(0, 168, 246);
     padding: 1vh;
-    border: transparent;
+    border: var(--transparent);
     border-radius: 2vw;
-    color: black;
+    color: var(--preto);
 }
 
 /* FIM BANNER  */

@@ -1,0 +1,10 @@
+:root {
+    --fundo: rgb(3, 0, 17);
+    --branco: #fdfdfdfd;
+    --preto:rgb(0, 0, 0);
+    --letra: rgb(0, 168, 246);
+    --aqua: rgb(0, 255, 255);
+    --transparent: transparent;
+    --fundoCard:rgba(0, 0, 0, 0.507);
+    --textoRodape:rgba(0, 221, 255, 0.641);
+}
