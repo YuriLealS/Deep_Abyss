@@ -3,6 +3,7 @@
     border: 1px solid white;
     border-radius: 50px;
 }
+
 .ipt_login{
     width: 300px;
     text-align: center;
@@ -11,4 +12,24 @@
     border: transparent;
     border-bottom: 1px solid aqua;
     margin: 10px 0;
+}
+
+.container_cardLogin{
+    background-color: var(--preto);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.texto_card{
+    color:var(--letra);
+    font-family: var(--fonte);
+    font-size: 120%;
+}
+
+.titulo_card{
+    color: var(--aqua);
+    font-weight: bold;
 }
