@@ -1,5 +1,5 @@
 .login_card{
-    margin: 12% 30% 5% 30%;
+    margin: 10% 30% -1% 30%;
     border: 3px solid var(--branco);
     border-radius: 50px;
     background: var(--preto);
@@ -29,9 +29,30 @@
     color:var(--letra);
     font-family: var(--fonte);
     font-size: 120%;
+    margin: 0;
 }
 
 .titulo_card{
     color: var(--aqua);
     font-weight: bold;
+}
+
+.btn_logar{
+    color: var(--aqua);
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 168, 246);
+    border-radius: 100px 0 100px 0;
+    margin: 10px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+.btn_logar:hover{
+    background: var(--branco);
+    color: black;
+    border: 2px solid var(--aqua);
+    text-shadow: 1px 1px 3px black;
+    cursor: pointer;
 }
