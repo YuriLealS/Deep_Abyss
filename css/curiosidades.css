@@ -1,3 +1,5 @@
+/* Início banner */
+
 .banner{
     border-radius: 60px;
     margin: 9% 10% 0 10% ;
@@ -26,4 +28,48 @@
     font-size: 80px;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 40px var(--aqua);
+}
+
+/* Fim banner */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Início card */
+
+.sobre_animais{
+    box-shadow: 1px 1px 40px var(--aqua);
+    border: 3px solid var(--branco);
+    margin: 3% 10% 10% 10%;
+    background:var(--fundoCard);
+    padding: 30px;
+    border-radius: 60px;
+}
+
+.corpo_sobre_animais{
+    color:var(--branco);
+    text-align: center;
+    padding: 0 50px;
+    font-size: 110%;
+}
+
+#titulo_sobre{
+    color: var(--aqua);
+    font-size: 200%;
+}
+
+.imagem_sobre_animais{
+    border-radius: 10px;
+    height: 30vw;
+}
+
+.texto_sobre_animais{
+    color: var(--letra);
+    margin:20px 1px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-size: 25px;
+    font-family: var(--fonte);
+    font-weight: bold;
+    text-indent: 70px;
 }

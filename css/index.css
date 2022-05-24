@@ -20,7 +20,7 @@
 .caixa_texto_banner{
     display: flex;
     flex-direction: column;
-    padding: 1vh;
+    padding: 1.3vh;
     align-items: center;
 }
 
@@ -30,19 +30,18 @@
     flex-direction: row;
     text-align: justify;
     font-size: 190%;
-    font-family: monospace;
+    font-family: var(--fonte);
     font-weight: bold;
     text-indent: 3vw;
 }
 
 .titulo_banner{
-
     color: var(--aqua);
     display: flex;
     flex-direction: row;
     text-align: center;
     font-size: 200%;
-    font-family: monospace;
+    font-family: var(--fonte);
     font-weight: bold;
 }
 
@@ -56,7 +55,7 @@
     text-align: center;
     color: var(--aqua);
     font-size: 150%;
-    font-family: monospace;
+    font-family: var(--fonte);
     font-weight: bold;
     border: var(--transparent);
 }
@@ -75,22 +74,22 @@
 /* COMEÇO EXPLICAÇÃO */
 
 .explicacao_zonaAbissal{
-    box-shadow: 1px 1px 40px aqua;
-    border: 5px solid white;
+    box-shadow: 1px 1px 40px var(--aqua);
+    border: 5px solid var(--branco);
     margin: 0 10% 10% 10%;
-    background:rgba(0, 0, 0, 0.507);
+    background:var(--fundoCard);
     padding: 30px;
 }
 
 .corpo_explicacao{
-    color:white;
+    color:var(--branco);
     text-align: center;
     padding: 0 50px;
     font-size: 110%;
 }
 
 #titulo_explicacao{
-    color: aqua;
+    color: var(--aqua);
     font-size: 200%;
 }
 
@@ -100,13 +99,13 @@
 }
 
 .texto_banner_explicacao{
-    color: rgb(0, 168, 246);
+    color: var(--letra);
     margin:20px 1px;
     display: flex;
     flex-direction: row;
     text-align: justify;
     font-size: 25px;
-    font-family: monospace;
+    font-family: var(--fonte);
     font-weight: bold;
     text-indent: 70px;
 }
@@ -114,9 +113,9 @@
 .btn_cadastro_explicacao{
     background-color: transparent;
     text-align: center;
-    color: aqua;
+    color: var(--aqua);
     font-size: 20px;
-    font-family: monospace;
+    font-family: var(--fonte);
     font-weight: bold;
     border: transparent;
     margin-bottom: 10px;
