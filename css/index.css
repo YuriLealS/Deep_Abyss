@@ -1,10 +1,12 @@
 /* COMEÇO BANNER  */
 
 .banner{
-    border: 5px solid var(--branco);
+    border: 3px solid var(--branco);
     box-shadow: 1px 1px 40px var(--aqua);
     background:var(--fundoCard);
     margin: 15% 10% 0% 10%;
+    border-radius: 25px;
+
 }
 
 .container_banner{
@@ -15,6 +17,8 @@
 .img_banner{
     height: 72vh;
     width: 50vw;
+    border-radius: 25px;
+
 }
 
 .caixa_texto_banner{
@@ -75,10 +79,11 @@
 
 .explicacao_zonaAbissal{
     box-shadow: 1px 1px 40px var(--aqua);
-    border: 5px solid var(--branco);
+    border: 3px solid var(--branco);
     margin: 0 10% 10% 10%;
     background:var(--fundoCard);
     padding: 30px;
+    border-radius: 25px;
 }
 
 .corpo_explicacao{
@@ -127,6 +132,7 @@
     border-radius: 50px;
     color: black;
 }
+
 
 /* FIM EXPLICAÇÃO */
 
