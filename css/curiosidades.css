@@ -77,3 +77,15 @@
 .imagem{
     width: 60%;
 }
+
+.legenda{
+    color: var(--branco);
+    margin:20px 1px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-size: 25px;
+    font-family: var(--fonte);
+    font-weight: bold;
+    text-indent: 10px;
+}
