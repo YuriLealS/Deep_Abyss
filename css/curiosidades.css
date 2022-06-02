@@ -54,7 +54,7 @@
 
 #titulo_sobre{
     color: var(--aqua);
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .imagem_sobre_animais{
@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: row;
     text-align: justify;
-    font-size: 25px;
+    font-size: 120%;
     font-family: var(--fonte);
     font-weight: bold;
     text-indent: 70px;
@@ -83,9 +83,20 @@
     margin:20px 1px;
     display: flex;
     flex-direction: row;
-    text-align: justify;
-    font-size: 25px;
+    text-align: center;
+    font-size: 100%;
     font-family: var(--fonte);
     font-weight: bold;
     text-indent: 10px;
+}
+
+.legenda_img{
+    color:var(--branco);
+    text-align: center;
+    padding: 0 50px;
+    font-size: 80%;
+}
+
+.div_legenda{
+    text-align: center;
 }
