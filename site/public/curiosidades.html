@@ -12,19 +12,21 @@
     <link rel="stylesheet" href="../css/rodape.css">
     <link rel="stylesheet" href="../css/curiosidades.css">
 </head>
+
 <body>
+
     <!-- Início Cabeçalho -->
 
     <div class="cabecalho">
         <div class="container_cabecalho">
-            <a href="index.html"><img src="../css/img/logo.png" alt="Logo do Site" class="logo_cabecalho"></a>
+            <a href="index_logado.html"><img src="../css/img/logo.png" alt="Logo do Site" class="logo_cabecalho"></a>
                 <ul class="itens_cabecalho">
-                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="index_logado.html">Home</a></li>
                     <li> <a href="curiosidades.html">Curiosidades</a></li>
                     <li> <a href="quizz.html"> Quizz</a></li>
                     <li>|</li>
-                    <li> <a href="cadastro.html">Cadastro</a></li>
-                    <li> <a href="login.html">Login</a></li>                
+                    <!-- <li> <a href="cadastro.html">Cadastro</a></li> -->
+                    <li> <a onclick="limparSessao()" style="cursor: pointer;">Log out</a></li>                
                 </ul>
         </div>
     </div>
@@ -565,6 +567,16 @@
 </body>
 </html>
 
+<script>
+
+    function limparSessao() {
+    // aguardar();
+    sessionStorage.clear();
+    // finalizarAguardar();
+    window.location = "../login.html";
+    }
+
+</script>
 <!-- Parágrafo
 <p class="texto_sobre_animais">
 
