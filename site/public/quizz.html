@@ -85,7 +85,7 @@
 
         <div class="botao_confirmar" id="div_confirma3">
             <button onclick="confirmado3()" id="confirmar3" class="confirme">Confirmar Resposta</button>
-        </div> 
+        </div>
 
         <div class="botao_confirmar" id="div_confirma4">
             <button onclick="confirmado4()" id="confirmar4" class="confirme">Confirmar Resposta</button>
@@ -111,8 +111,8 @@
             <button onclick="confirmado9()" id="confirmar9" class="confirme">Confirmar Resposta</button>
         </div>
         
-        <div class="botao_confirmar" id="div_confirma4">
-            <button onclick="confirmado10()" id="confirmar10" class="confirme">Confirmar Resposta</button>
+        <div class="botao_confirmar" id="div_confirma10">
+            <button onclick="confirmado10()" id="confirmar10" class="confirme">Finalizar Quizz</button>
         </div>
 <!-- --------------------------------------------------------------------------------------------------------- -->
 
@@ -204,7 +204,6 @@
             altC.innerHTML = 'Lula vampiro do inferno'
             altD.innerHTML = 'Tubarão cobra'
 
-            div_confirma1.style.display = 'none'
             div_confirma2.style.display = 'none'
             div_confirma3.style.display = 'flex'
 
@@ -218,7 +217,6 @@
             altC.innerHTML = 'Lula vampiro do inferno'
             altD.innerHTML = 'Tubarão cobra'
 
-            div_confirma1.style.display = 'none'
             div_confirma2.style.display = 'none'
             div_confirma3.style.display = 'flex'
         }
@@ -229,7 +227,7 @@
         if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
             alert ('Selecione uma alternativa')
 
-        } else if (D.checked) {
+        } else if (A.checked) {
             acertos++        
             num.value = '4'
             pergunta.innerHTML = 'Qual desses animais o macho não tem sistema digestivo, nascendo apenas para reproduzir e depois acaba morrendo?'
@@ -239,8 +237,6 @@
             altC.innerHTML = 'Lula vampiro do inferno'
             altD.innerHTML = 'Tubarão cobra'
 
-            div_confirma1.style.display = 'none'
-            div_confirma2.style.display = 'none'
             div_confirma3.style.display = 'none'
             div_confirma4.style.display = 'flex'
 
@@ -254,15 +250,12 @@
             altC.innerHTML = 'Lula vampiro do inferno'
             altD.innerHTML = 'Tubarão cobra'
 
-            div_confirma1.style.display = 'none'
-            div_confirma2.style.display = 'none'
             div_confirma3.style.display = 'none'
             div_confirma4.style.display = 'flex'
-
         }
 
     }
-
+    
     function confirmado4() {
         if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
             alert ('Selecione uma alternativa')
@@ -270,32 +263,26 @@
         } else if (B.checked) {
             acertos++        
             num.value = '5'
-            pergunta.innerHTML = 'Foi por muito tempo considerado o peixe mais feio do mundo. Injustamente, já que sua aparência em seu habitat natural pode ser considerada normal em relação a qualquer outro peixe'
+            pergunta.innerHTML = 'Chlamydoselachus anguineus é o nome científico de qual peixe?'
 
-            altA.innerHTML = 'Peixe-Diabo-Negro'
-            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altA.innerHTML = 'Tubarão Cobra'
+            altB.innerHTML = 'Peixe-Diabo-Negro'
             altC.innerHTML = 'Lula vampiro do inferno'
-            altD.innerHTML = 'Tubarão cobra'
+            altD.innerHTML = 'Tubarão Duende'
 
-            div_confirma1.style.display = 'none'
-            div_confirma2.style.display = 'none'
-            div_confirma3.style.display = 'none'
             div_confirma4.style.display = 'none'
             div_confirma5.style.display = 'flex'
 
         } else{
             erros++
             num.value = '5'
-            pergunta.innerHTML = 'Qual desses animais o macho não tem sistema digestivo, nascendo apenas para reproduzir e depois acaba morrendo?'
+            pergunta.innerHTML = 'Chlamydoselachus anguineus é o nome científico de qual peixe?'
 
-            altA.innerHTML = 'Peixe-Diabo-Negro'
-            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altA.innerHTML = 'Tubarão Cobra'
+            altB.innerHTML = 'Peixe-Diabo-Negro'
             altC.innerHTML = 'Lula vampiro do inferno'
-            altD.innerHTML = 'Tubarão cobra'
+            altD.innerHTML = 'Tubarão Duende'
 
-            div_confirma1.style.display = 'none'
-            div_confirma2.style.display = 'none'
-            div_confirma3.style.display = 'none'
             div_confirma4.style.display = 'none'
             div_confirma5.style.display = 'flex'
 
@@ -303,6 +290,204 @@
 
     }
 
+    function confirmado5() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (A.checked) {
+            acertos++        
+            num.value = '6'
+            pergunta.innerHTML = 'Sua mordida é extremamente diferente de todos os outro peixes, pois sua mandíbula se desloca para frente'
+
+            altA.innerHTML = 'Tubarão boca grande'
+            altB.innerHTML = 'Tubarão Charuto'
+            altC.innerHTML = 'Tubarão Cobra'
+            altD.innerHTML = 'Tubarão Duende'
+
+            div_confirma5.style.display = 'none'
+            div_confirma6.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '6'
+            pergunta.innerHTML = 'Sua mordida é extremamente diferente de todos os outro peixes, pois sua mandíbula se desloca para frente '
+
+            altA.innerHTML = 'Tubarão boca grande'
+            altB.innerHTML = 'Tubarão Charuto'
+            altC.innerHTML = 'Tubarão Cobra'
+            altD.innerHTML = 'Tubarão Duende'
+
+            div_confirma5.style.display = 'none'
+            div_confirma6.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado6() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (D.checked) {
+            acertos++        
+            num.value = '7'
+            pergunta.innerHTML = 'A luz emitida por esta espécie, ao contrário de outras espécies bioluminescentes, encontra-se numa gama que abrange parte do espetro eletromagnético, que inclui radiação infra-vermelha.'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Lula vampiro do inferno'
+            altC.innerHTML = 'Peixe-Dragrão-Negro'
+            altD.innerHTML = 'Regaleco'
+
+            div_confirma6.style.display = 'none'
+            div_confirma7.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '7'
+            pergunta.innerHTML = 'A luz emitida por esta espécie, ao contrário de outras espécies bioluminescentes, encontra-se numa gama que abrange parte do espetro eletromagnético, que inclui radiação infra-vermelha.'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Lula vampiro do inferno'
+            altC.innerHTML = 'Peixe-Dragrão-Negro'
+            altD.innerHTML = 'Regaleco'
+
+            div_confirma6.style.display = 'none'
+            div_confirma7.style.display = 'flex'
+
+        }
+
+    }
+
+
+    function confirmado7() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (C.checked) {
+            acertos++        
+            num.value = '8'
+            pergunta.innerHTML = 'Em quais oceanos a Lula vampiro do inferno pode ser encontrada?'
+
+            altA.innerHTML = 'Índico e Atlântico'
+            altB.innerHTML = 'Atlântico e Glacial Ártico'
+            altC.innerHTML = 'Índico'
+            altD.innerHTML = 'Pacífico e Atlântico'
+
+            div_confirma7.style.display = 'none'
+            div_confirma8.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '8'
+            pergunta.innerHTML = 'Em quais oceanos a Lula vampiro do inferno pode ser encontrada?'
+
+            altA.innerHTML = 'Índico e Atlântico'
+            altB.innerHTML = 'Atlântico e Glacial Ártico'
+            altC.innerHTML = 'Índico'
+            altD.innerHTML = 'Pacífico e Atlântico'
+
+            div_confirma7.style.display = 'none'
+            div_confirma8.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado8() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (D.checked) {
+            acertos++        
+            num.value = '9'
+            pergunta.innerHTML = 'Qual o maior tamanho que um regaleco pode chegar?'
+
+            altA.innerHTML = '10m'
+            altB.innerHTML = '20m'
+            altC.innerHTML = '13m'
+            altD.innerHTML = '12m'
+
+            div_confirma8.style.display = 'none'
+            div_confirma9.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '9'
+            pergunta.innerHTML = 'Qual o maior tamanho que um regaleco pode chegar?'
+
+            altA.innerHTML = '10m'
+            altB.innerHTML = '20m'
+            altC.innerHTML = '13m'
+            altD.innerHTML = '12m'
+
+            div_confirma8.style.display = 'none'
+            div_confirma9.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado9() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (D.checked) {
+            acertos++        
+            num.value = '10'
+            pergunta.innerHTML = 'Segundo uma crença japonesa, esse peixe é um ”mensageiro do palácio do deus do mar” que anuncia acontecimentos catastróficos como terremotos e tsunamis.'
+
+            altA.innerHTML = 'Tubarão Cobra'
+            altB.innerHTML = 'Regaleco'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão Duende'
+
+            div_confirma9.style.display = 'none'
+            div_confirma10.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '10'
+            pergunta.innerHTML = 'Segundo uma crença japonesa, esse peixe é um ”mensageiro do palácio do deus do mar” que anuncia acontecimentos catastróficos como terremotos e tsunamis.'
+
+            altA.innerHTML = 'Tubarão Cobra'
+            altB.innerHTML = 'Regaleco'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão Duende'
+
+            div_confirma9.style.display = 'none'
+            div_confirma10.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado10() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (B.checked) {
+            acertos++        
+            num.value = ''
+
+            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%`
+
+            div_confirma9.style.display = 'none'
+            div_confirma10.style.display = 'none'
+            alterna.style.display = 'none'
+
+        } else{
+            erros++
+            num.value = ''
+
+            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%`
+
+            div_confirma9.style.display = 'none'
+            div_confirma10.style.display = 'none'
+            alterna.style.display = 'none'
+
+        }
+
+    }
 
     function finalizar() {
 
