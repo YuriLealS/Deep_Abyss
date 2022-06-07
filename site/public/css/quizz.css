@@ -1,6 +1,55 @@
 .perguntas{
-margin-top: 5%;
-border: 1px solid white;
-height: 50%;
+margin:11% 10% 0 10%;
+/* border: 1px solid white; */
+height: 65vh;
 color: white;
+text-align: center;
+font-size: 120%;
+}
+
+.btn_play{
+    font-family: var(--fonte);
+    margin-top: 6%;
+    width: 50%;
+    border-radius: 100%;
+    padding: 10%;
+    font-size: 290%;
+    border: 3px solid cyan;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 30px aqua;
+    text-shadow: 0 0 50px white;
+    cursor: pointer;
+}
+
+.btn_play:hover{
+    font-family: var(--fonte);
+    margin-top: 6%;
+    width: 50%;
+    border-radius: 100%;
+    padding: 10%;
+    font-size: 290%;
+    border: 3px solid cyan;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 30px aqua;
+    text-shadow: 0 0 30px black;
+    cursor: pointer;
+}
+
+.sumir{
+    background-color: transparent;
+    border: transparent;
+    width: 12px;
+    color: white;
+    font-size:100%;
+    font-family: var(--fonte);
+    font-weight: bold;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
