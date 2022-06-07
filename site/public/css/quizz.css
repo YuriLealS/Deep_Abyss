@@ -1,11 +1,14 @@
 .perguntas{
 margin:11% 10% 0 10%;
 /* border: 1px solid white; */
-height: 65vh;
+height: 50vh;
 color: white;
 text-align: center;
 font-size: 120%;
+flex-wrap: wrap;
 }
+
+
 
 .btn_play{
     font-family: var(--fonte);
@@ -52,4 +55,70 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.alternativas{
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    position: relative;
+    color: white;
+    height: 5%;
+    
+}
+
+.alternativa_A{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 110%;
+}
+
+.alternativa_B{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 110%;
+}
+
+.alternativa_C{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 110%;
+}
+.alternativa_D{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 110%;
+}
+
+#mudar_pergunta{
+    display: none;
+}
+
+.caixa_perguntas{
+    display: none;
+}
+
+#pergunta{
+    font-size: 160%;
+}
+
+.confirme{
+    width: 15%;
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 115%;
+    border-radius: 50px;
+    border: 1px solid aqua;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px aqua;
+    cursor: pointer;
+}
+
+.botao_confirmar{
+    margin-top: 2%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
 }

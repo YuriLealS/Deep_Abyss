@@ -40,14 +40,80 @@
 
         <div class="perguntas">
             <button onclick="play()" class="btn_play" id="btn_inicial">INICIAR</button>
-                <div class="caixa_perguntas" style="display: none;" id="caixas_perguntas">
-                    <h2 id="mudar_pergunta">
-                        Pergunta <input type="number" id="num" class="sumir" disabled>
-                    </h2>
+
+                <div class="caixa_perguntas" id="caixas_perguntas">
+
+                    <h2 id="mudar_pergunta">Pergunta <input type="number" id="num" class="sumir" disabled></h2>
+
+                            <div id="pergunta">
+                            </div>
+                    
                 </div>
         </div>
+
+        <div class="alternativas" id="alterna">
+                            
+            <div class="alternativa_A">
+                <input type="radio" id="A" name="fav_language" value="A">
+                <label for="A" id="altA">A</label><br>
+            </div>
+
+            <div class="alternativa_B"> 
+                <input type="radio" id="B" name="fav_language" value="B">
+                <label for="B" id="altB">B</label><br>
+            </div>
+
+            <div class="alternativa_C">
+                <input type="radio" id="C" name="fav_language" value="C">
+                <label for="C" id="altC">C</label><br>
+            </div>
+            
+            <div class="alternativa_D">
+                <input type="radio" id="D" name="fav_language" value="D">
+                <label for="D" id="altD">D</label>
+            </div>
+
+        </div>
         
-       
+        <div class="botao_confirmar" id="div_confirma1">
+            <button onclick="confirmado1()" id="confirmar1" class="confirme">Confirmar Resposta</button>
+        </div>
+
+        <div class="botao_confirmar" id="div_confirma2">
+            <button onclick="confirmado2()" id="confirmar2" class="confirme">Confirmar Resposta</button>
+        </div>
+
+        <div class="botao_confirmar" id="div_confirma3">
+            <button onclick="confirmado3()" id="confirmar3" class="confirme">Confirmar Resposta</button>
+        </div> 
+
+        <div class="botao_confirmar" id="div_confirma4">
+            <button onclick="confirmado4()" id="confirmar4" class="confirme">Confirmar Resposta</button>
+        </div>
+
+        <div class="botao_confirmar" id="div_confirma5">
+            <button onclick="confirmado5()" id="confirmar5" class="confirme">Confirmar Resposta</button>
+        </div>
+        
+        <div class="botao_confirmar" id="div_confirma6">
+            <button onclick="confirmado6()" id="confirmar6" class="confirme">Confirmar Resposta</button>
+        </div>
+        
+        <div class="botao_confirmar" id="div_confirma7">
+            <button onclick="confirmado7()" id="confirmar7" class="confirme">Confirmar Resposta</button>
+        </div>
+        
+        <div class="botao_confirmar" id="div_confirma8">
+            <button onclick="confirmado8()" id="confirmar8" class="confirme">Confirmar Resposta</button>
+        </div>
+        
+        <div class="botao_confirmar" id="div_confirma9">
+            <button onclick="confirmado9()" id="confirmar9" class="confirme">Confirmar Resposta</button>
+        </div>
+        
+        <div class="botao_confirmar" id="div_confirma4">
+            <button onclick="confirmado10()" id="confirmar10" class="confirme">Confirmar Resposta</button>
+        </div>
 <!-- --------------------------------------------------------------------------------------------------------- -->
 
 <!--Inicio rodapé -->
@@ -71,11 +137,170 @@
 </html>
 
 <script>
+
+    var acertos = 0
+    var erros = 0
+
     function play() {
         btn_inicial.style.display = 'none'
+        mudar_pergunta.style.display = 'block'
+        alterna.style.display = 'flex'
         caixas_perguntas.style.display = 'block'
+        div_confirma1.style.display = 'flex'
         num.value = '1'
-        // mudar_pergunta.innerHTML = ''
+        pergunta.innerHTML = 'Qual desses peixes abaixo é encontrado em todos os oceanos?'
+
+        altA.innerHTML = 'Peixe bolha'
+        altB.innerHTML = 'Peixe-Diabo-Negro'
+        altC.innerHTML = 'Regaleco'
+        altD.innerHTML = 'Tubarão Duende'
+    }
+
+    function confirmado1() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (B.checked) {
+            acertos++        
+            num.value = '2'
+            pergunta.innerHTML = 'Qual o nome científico do peixe regaleco?'
+
+            altA.innerHTML = 'Regalecus Giné'
+            altB.innerHTML = 'Regalecus Gise'
+            altC.innerHTML = 'Regalecus Gesne'
+            altD.innerHTML = 'Regaleco'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '2'
+            pergunta.innerHTML = 'Qual o nome científico do peixe regaleco?'
+
+            altA.innerHTML = 'Regalecus Giné'
+            altB.innerHTML = 'Regalecus Gise'
+            altC.innerHTML = 'Regalecus Gesne'
+            altD.innerHTML = 'Regaleco'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado2() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (C.checked) {
+            acertos++        
+            num.value = '3'
+            pergunta.innerHTML = 'Qual desses animais o macho é considerado um parasita da fêmea, passando grande parte da sua vida dentro da mesma?'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '3'
+            pergunta.innerHTML = 'Qual desses animais o macho é considerado um parasita da fêmea, passando grande parte da sua vida dentro da mesma?'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'flex'
+        }
+
+    }
+
+    function confirmado3() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (D.checked) {
+            acertos++        
+            num.value = '4'
+            pergunta.innerHTML = 'Qual desses animais o macho não tem sistema digestivo, nascendo apenas para reproduzir e depois acaba morrendo?'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'none'
+            div_confirma4.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '4'
+            pergunta.innerHTML = 'Qual desses animais o macho não tem sistema digestivo, nascendo apenas para reproduzir e depois acaba morrendo?'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'none'
+            div_confirma4.style.display = 'flex'
+
+        }
+
+    }
+
+    function confirmado4() {
+        if (A.checked == false && B.checked == false && C.checked == false && D.checked == false) {
+            alert ('Selecione uma alternativa')
+
+        } else if (B.checked) {
+            acertos++        
+            num.value = '5'
+            pergunta.innerHTML = 'Foi por muito tempo considerado o peixe mais feio do mundo. Injustamente, já que sua aparência em seu habitat natural pode ser considerada normal em relação a qualquer outro peixe'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'none'
+            div_confirma4.style.display = 'none'
+            div_confirma5.style.display = 'flex'
+
+        } else{
+            erros++
+            num.value = '5'
+            pergunta.innerHTML = 'Qual desses animais o macho não tem sistema digestivo, nascendo apenas para reproduzir e depois acaba morrendo?'
+
+            altA.innerHTML = 'Peixe-Diabo-Negro'
+            altB.innerHTML = 'Peixe-Dragão-Negro'
+            altC.innerHTML = 'Lula vampiro do inferno'
+            altD.innerHTML = 'Tubarão cobra'
+
+            div_confirma1.style.display = 'none'
+            div_confirma2.style.display = 'none'
+            div_confirma3.style.display = 'none'
+            div_confirma4.style.display = 'none'
+            div_confirma5.style.display = 'flex'
+
+        }
+
     }
 
 
@@ -125,5 +350,4 @@
     window.location = "login.html";
     }
 
-    
 </script>
