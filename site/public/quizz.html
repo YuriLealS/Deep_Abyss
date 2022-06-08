@@ -559,7 +559,10 @@
     }
 
     function listar() {
-        
+        pergunta.style.display = 'none'
+        for (var i = 0; i < vt_ranking.length; i++) {
+            analytics.innerHTML += `${vt_ranking[i]}<br>`
+        }
     }
 
     function limparSessao() {
