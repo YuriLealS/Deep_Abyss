@@ -52,7 +52,7 @@
         </div>
 
         <div id="analytics">
-            <button onclick="finalizar()" class="ranking">Ranking</button>
+            <button onclick="finalizar()" class="ranking" id="btn_ranking">Ranking</button>
         </div>
 
         <div class="alternativas" id="alterna">
@@ -522,6 +522,7 @@
                 ranking(sessionStorage.idUsuario);  
             } else {
                 throw ("Houve um erro ao tentar realizar a coleta de dados");
+                
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
@@ -559,10 +560,14 @@
     }
 
     function listar() {
+        var num = 1
         pergunta.style.display = 'none'
+        btn_ranking.style.display = 'none'
+        analytics.innerHTML +='Ranking <br>'
         for (var i = 0; i < vt_ranking.length; i++) {
-            analytics.innerHTML += `${vt_ranking[i]}<br>`
+            analytics.innerHTML += `${num++}° ${vt_ranking[i].nome} acertos: ${vt_ranking[i].acertos}<br>`
         }
+        num = 0
     }
 
     function limparSessao() {
