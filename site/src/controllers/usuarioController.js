@@ -100,6 +100,7 @@ function cadastrar_quizz(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var acertos = req.body.acertosServer;
     var erros = req.body.errosServer;
+    var fkUsuario = req.body.fkUsuarioServer;
     
 
     // Faça as validações dos valores
@@ -110,7 +111,7 @@ function cadastrar_quizz(req, res) {
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar_quizz(acertos, erros)
+        usuarioModel.cadastrar_quizz(acertos, erros, fkUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -128,10 +129,28 @@ function cadastrar_quizz(req, res) {
     }
 }
 
+function rankear(req, res) {
+
+    var idUsuario = req.params.idUsuario;
+
+    usuarioModel.rankear(idUsuario).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 module.exports = {
     entrar,
     cadastrar,
     cadastrar_quizz,
+    rankear,
     listar,
     testar
 }

@@ -9,7 +9,7 @@
     <link rel="icon" href="css/img/logo2.png">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/rodape_quizz.css">
     <link rel="stylesheet" href="css/quizz.css">
 </head>
 <body>
@@ -49,6 +49,10 @@
                             </div>
                     
                 </div>
+        </div>
+
+        <div id="analytics">
+            <button onclick="finalizar()" class="ranking">Ranking</button>
         </div>
 
         <div class="alternativas" id="alterna">
@@ -137,7 +141,7 @@
 </html>
 
 <script>
-
+    var vt_ranking = []
     var acertos = 0
     var erros = 0
 
@@ -469,21 +473,25 @@
             acertos++        
             num.value = ''
 
-            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%`
+            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%.`
 
             div_confirma9.style.display = 'none'
             div_confirma10.style.display = 'none'
             alterna.style.display = 'none'
+            mudar_pergunta.style.display = 'none'
+            analytics.style.display = 'flex'
 
         } else{
             erros++
             num.value = ''
 
-            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%`
+            pergunta.innerHTML = `Parabéns, Você terminou o quizz!!! você conseguiu acertar ${acertos} questões, ou seja, ${(acertos/10*100).toFixed(0)}%.`
 
             div_confirma9.style.display = 'none'
             div_confirma10.style.display = 'none'
             alterna.style.display = 'none'
+            mudar_pergunta.style.display = 'none'
+            analytics.style.display = 'flex'
 
         }
 
@@ -491,12 +499,9 @@
 
     function finalizar() {
 
-        // var acertosVar = Number(ipt_nome.value);
-        // var errosVar = Number(ipt_email.value);
-
-        setInterval(sumirMensagem, 5000)
+        // setInterval(sumirMensagem, 5000)
         // Enviando o valor da nova input
-        fetch("/usuarios/cadastrar", {
+        fetch("/usuarios/cadastrar_quizz", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -504,30 +509,57 @@
             body: JSON.stringify({
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
-                acertosServer: acertosVar,
-                errosServer: errosVar,
+                acertosServer: acertos,
+                errosServer: erros,
+                fkUsuarioServer: sessionStorage.ID_USUARIO
             })
         }).then(function (resposta) {
 
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-
-                setTimeout(() => {
-                    window.location = "index_logado.html";
-                }, "2000")
                 
-                limparFormulario();
-                finalizarAguardar();
+                ranking(sessionStorage.idUsuario);  
             } else {
                 throw ("Houve um erro ao tentar realizar a coleta de dados");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
         });
 
         return false;
+    }
+
+    function ranking(idUsuario) {
+
+        fetch(`/usuarios/listar_ranking/${idUsuario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                console.log(response);
+                response.json().then(json => {
+                    console.log(json);
+                    // console.log(json.length)
+                    // console.log(JSON.stringify(json));
+                    vt_ranking = [];
+                    
+                    for(let i = 0; i < json.length; i ++ ){
+                        vt_ranking.push(json[i]);
+                        console.log(`cadastro ${i}`)
+                        // o nome de cada botao retorna assim
+                        console.log(vt_ranking[i])
+                    }
+                    listar()
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function listar() {
+        
     }
 
     function limparSessao() {

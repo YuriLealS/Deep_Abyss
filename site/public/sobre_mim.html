@@ -24,7 +24,6 @@
                     <li> <a href="quizz.html">Quizz</a></li>
                     <li> <a href="sobre_mim.html">Sobre</a></li>
                     <li>|</li>
-                    <!-- <li> <a href="cadastro.html">Cadastro</a></li> -->
                     <li> <a onclick="limparSessao()" style="cursor: pointer;">Log out</a></li>  
                 </ul>
         </div>
@@ -124,12 +123,12 @@
 
 </body>
 </html>
-</body>
-</html>
 
 <script>
+
     function limparSessao() {
     sessionStorage.clear();
     window.location = "login.html";
     }
+
 </script>

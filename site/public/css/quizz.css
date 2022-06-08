@@ -122,3 +122,25 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: row;
     justify-content: center;
 }
+
+.ranking{
+    font-family: var(--fonte);
+    /* margin-top: 6%; */
+    border-radius: 50px;
+    padding: 1%;
+    font-size: 200%;
+    border: 3px solid cyan;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 30px aqua;
+    text-shadow: 0 0 50px white;
+    cursor: pointer;
+}
+
+#analytics{
+    margin-top: -12%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
