@@ -19,12 +19,13 @@
     color: var(--letra);
     width: 50%;
     margin-left: 35vw;
-    font-size: 170%;
+    font-size: 1.4rem;
     list-style: none;
     font-weight: bold;
     font-family: candara;
-    text-shadow: 1px 1px 0 var(--branco);
+    text-shadow: 1px 2px 0px var(--aqua);
     justify-content: space-evenly;
+    font-family: var(--fonte-titulo);
 }
 a {
     color: currentColor;
