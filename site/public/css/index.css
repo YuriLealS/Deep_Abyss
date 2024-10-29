@@ -1,17 +1,22 @@
+
 /* COMEÇO BANNER  */
 
 .banner{
-    border: 3px solid var(--branco);
-    box-shadow: 1px 1px 40px var(--aqua);
-    background:var(--fundoCard);
-    margin: 15% 10% 0% 10%;
-    border-radius: 25px;
-
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container_banner{
     display: flex;
     flex-direction: row;
+    width: 99%;
+    border: 1px solid var(--branco);
+    box-shadow: 1px 1px 30px var(--aqua);
+    background:var(--fundoCard);
+    border-radius: 25px;
 }
 
 .img_banner{
@@ -28,47 +33,39 @@
     align-items: center;
 }
 
-.texto_banner{
-    color: var(--letra); 
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    font-size: 190%;
-    font-family: var(--fonte);
-    font-weight: bold;
-    text-indent: 3vw;
-}
-
-.titulo_banner{
-    color: var(--aqua);
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    font-size: 200%;
-    font-family: var(--fonte);
-    font-weight: bold;
-}
-
 #saiba_mais{
     text-indent: 0;
     text-decoration: underline;
+    font-size: 1.4rem;
+    font-family: var(--fonte-titulo);
 }
 
 .btn_banner{
     background-color: var(--transparent);
     text-align: center;
     color: var(--aqua);
-    font-size: 150%;
-    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-family: var(--fonte-titulo);
     font-weight: bold;
     border: var(--transparent);
+    border: 2px solid rgb(0, 168, 246);
+    border-radius: 100px 0 100px 0;
+    padding: 20px;
+
 }
-.btn_banner :hover{
-    background: rgb(0, 168, 246);
-    padding: 1vh;
-    border: var(--transparent);
-    border-radius: 2vw;
-    color: var(--preto);
+
+.btn_banner:hover{
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+#botoes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* FIM BANNER  */

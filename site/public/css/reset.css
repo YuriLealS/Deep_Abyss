@@ -56,3 +56,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+h1{
+	font-size: 1.6rem;
+	font-family: var(--fonte-titulo);
+	color: var(--aqua);
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+
+h2{
+	font-size: 1.4rem;
+	font-family: var(--fonte-titulo);
+	color: var(--aqua);
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+
+p{
+	color: var(--letra);
+	font-size: 1.3rem;
+}
